@@ -34,7 +34,7 @@ import java.io.*;
 
             // TODO: research try-with-resources to discover how to
             // significantly shorten up this try/catch/finally block
-            in = new BufferedReader(new FileReader("input.txt"));
+            in = new BufferedReader(new FileReader("input2.txt"));// input2.txt does not exist - we will see an exception thrown!
             while (in.ready()) {
                 line = in.readLine();
                 System.out.println(line);
