@@ -12,7 +12,7 @@ import java.io.*;
       *  @param args the command line arguments
       **/
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ReadDemo demo = new ReadDemo();
         demo.run();
 
@@ -20,8 +20,9 @@ import java.io.*;
 
     /** The run method will read a file, line by line and write out each
      *  line to the console.
+     * @throws IOException
     **/
-    public void run() {
+    public void run() throws IOException {
         String line = null;
         // Question: why did we need to create in here, outside of the try?
         BufferedReader in = null;
@@ -43,9 +44,6 @@ import java.io.*;
         } catch (FileNotFoundException fileNotFoundEx) {
             System.out.println("There was a problem opening the file");
             fileNotFoundEx.printStackTrace();
-        } catch (IOException ioEx) {
-            System.out.println("There was a problem reading the file");
-            ioEx.printStackTrace();
         } finally {
             try {
                 if (in != null) {
