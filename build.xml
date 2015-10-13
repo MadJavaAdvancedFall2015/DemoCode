@@ -129,6 +129,11 @@
       <fileset dir="${static}/images"/>
     </copy>
 
+    <!-- copy the javascript to the build/js dir-->
+    <copy todir="${build}/js">
+      <fileset dir="${static}/js"/>
+    </copy>
+
     <!-- copy the JSP pages to the web-app dir-->
     <copy todir="${build}">
       <fileset dir="${static}">
