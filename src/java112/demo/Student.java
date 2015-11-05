@@ -10,7 +10,13 @@ package java112.demo;
      private String grade;
      private int id;
 
-     Student(String firstName, String lastName, String grade, int id) {
+     public Student() {
+         //no argument constructor
+         // put my "always want to do stuff" here
+     }
+
+     public Student(String firstName, String lastName, String grade, int id) {
+         this();
          this.firstName = firstName;
          this.lastName = lastName;
          this.grade = grade;

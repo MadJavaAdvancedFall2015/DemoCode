@@ -121,8 +121,7 @@
 </div>
 
 <div class="tagline">
-        <p>Welcome to <strong>Icebrrrg</strong>, a free responsive website template that is cool as ice.<br />
-        Simple. Minimal. Easy-to-use.</p>
+        <p>Welcome to Advanced Java!!</p>
         </div>
 
 		</div><!-- container -->
@@ -132,19 +131,25 @@
         <section class="container">
 
 		<div class="one-third column">
-			<h3><i class="icon-heart rounded"></i> Project 2</h3>
+			<h3><i class="icon-heart rounded"></i> Unit 2</h3>
 			<ul>
                 <li><a href="/java112/trivial">Our First Servlet</a></li>
                 <li><a href="linkingDemo.html">Linking Demo</a></li>
+                <li><a href="/java112/lab5">Lab 5 Example</a></li>
+
             </ul>
 		</div>
 		<div class="one-third column">
-			<h3><i class="icon-cog rounded"></i> Easy to Customize</h3>
-			<p>The responsive 960 grid is so simple, it makes customizing Icebrrrg an absolute breeze.  Easily create multiple layout styles with zero effort!</p>
-		</div>
+			<h3><i class="icon-cog rounded"></i> Unit 3</h3>
+			<ul>
+                <li><a href="TeamProjectDemo.jsp">Team Project Demo Template</a></li>
+                <li><a href="/java112/lab32">Lab 3-2 Example</a></li>
+                <li><a href="/java112/attributeDemo">HttpRequest Attribute Demo</a></li>
+                <li><a href="/java112/eldemo.jsp">Expression Language Demo</a></li>
+                </ul>		</div>
 		<div class="one-third column">
-			<h3><i class="icon-resize-full rounded"></i> Responsive</h3>
-			<p>Icebrrrg is responsive from a full-width display right now to mobile - delivering a gorgeous experience for users no matter how they view your site.</p>
+			<h3><i class="icon-resize-full rounded"></i> Unit 4</h3>
+			<p>Coming soon....</p>
 		</div>
 
         </section>
