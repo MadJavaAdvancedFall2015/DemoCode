@@ -31,16 +31,27 @@ public class AttributeDemo extends HttpServlet {
 
         request.setAttribute("someVariable", "123");
 
-        Student student = new Student("SuperStar", "Student", "A", 111222);
 
-        request.setAttribute("Nancy", student);
+        request.setAttribute("studentList", createStudentList());
 
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/eldemo.jsp");
         dispatcher.forward(request, response);
 
+    }
 
+    public List createStudentList() {
+        List<Student> list = new ArrayList<Student>();
 
+        Student student = new Student("SuperStar", "Student", "A", 111222);
+        Student student1 = new Student("Rockstar", "Student", "AB", 111223);
+        Student student2 = new Student("Brown", "Charlie", "C", 111224);
+
+        list.add(student);
+        list.add(student1);
+        list.add(student2);
+
+        return list;
     }
 }
 

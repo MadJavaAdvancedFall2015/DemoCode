@@ -9,10 +9,10 @@
   </head>
 
   <body>
-    Yes, we really are in the jsp: <br />
-    Here is the variable  ${someVariable}
-    <br />
-    Here is the student ${Nancy}
+
+    Here is the variable: ${someVariable}
+    <br /><br />
+    Here is the student list<br /> ${studentList}
     <br />
 
     <a href="/java112">Home</a>

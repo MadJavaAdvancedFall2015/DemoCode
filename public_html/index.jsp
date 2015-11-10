@@ -146,7 +146,9 @@
                 <li><a href="/java112/lab32">Lab 3-2 Example</a></li>
                 <li><a href="/java112/attributeDemo">HttpRequest Attribute Demo</a></li>
                 <li><a href="/java112/eldemo.jsp">Expression Language Demo</a></li>
-                </ul>		</div>
+                <li><a href="/java112/mvc-demo">MVC Demo</a></li>
+             </ul>
+        </div>
 		<div class="one-third column">
 			<h3><i class="icon-resize-full rounded"></i> Unit 4</h3>
 			<p>Coming soon....</p>
