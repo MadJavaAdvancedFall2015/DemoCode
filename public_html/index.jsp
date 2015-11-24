@@ -151,7 +151,10 @@
         </div>
 		<div class="one-third column">
 			<h3><i class="icon-resize-full rounded"></i> Unit 4</h3>
-			<p>Coming soon....</p>
+			<ul>
+                 <li><a href="/java112/jstlDemo">JSTL Demo</a></li>
+                 <li><a href="sessionDemo.jsp">Session Demo</a></li>
+             </ul>
 		</div>
 
         </section>
