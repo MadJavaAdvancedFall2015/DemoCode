@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="pageTitle" value="This needs to be set for each page" scope="request" />
+<c:set var="pageTitle" value="Employee Search" scope="request" />
 
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -19,13 +19,12 @@
 	================================================== -->
 
 <c:import url="/jsp/header.jsp" />
-<c:import url="/jsp/rotatingImage.jsp" />
+
 
 <%-- content specific to my page follows --%>
-<c:import url="/jsp/indexContent.jsp" />
+Here is my employee search content: it is going to have a form here...
 
- <c:import url="/jsp/bottomImages.jsp" />
- <c:import url="/jsp/blogPosts.jsp" />
+
  <c:import url="/jsp/footer.jsp" />
 </body>
 </html>

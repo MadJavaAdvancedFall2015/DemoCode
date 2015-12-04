@@ -46,10 +46,10 @@
 
   <target name="compile_analyzer" depends="init">
     <!-- Compile the java code from ${src} into ${build} -->
-    <javac srcdir="${src}" 
-           destdir="${build}/classes" 
-           extdirs="${lib}" 
-           verbose="false" 
+    <javac srcdir="${src}"
+           destdir="${build}/classes"
+           extdirs="${lib}"
+           verbose="false"
            excludes="*.jsp,
                      *.html,
                      *.xml,
@@ -60,22 +60,22 @@
                      java112/project4/**,
                      java112/tests/**,
                      java112/demos/**"
-           deprecation="on" 
-           debug="on" 
+           deprecation="on"
+           debug="on"
            includeAntRuntime="false" />
   </target>
-  
+
   <target name="compile_jdbc_lab" depends="init">
       <!-- Compile the java code from ${src} into ${build} -->
       <javac srcdir="${src}"
         destdir="${build}/classes"
         extdirs="${lib}"
         verbose="false"
-        excludes="*.jsp,*.html,*.xml, 
-          java112/labs1/**, 
+        excludes="*.jsp,*.html,*.xml,
+          java112/labs1/**,
           java112/labs2/**,
           java112/labs3/**,
-          java112/project2/**, 
+          java112/project2/**,
           java112/project3/**,
           java112/tests/**,
           java112/demos/**,
@@ -116,7 +116,7 @@
       <fileset dir="${build}/classes" excludes="${build}/classes/java112/tests/**" />
     </jar>
   </target>
-  
+
   <target name="build_jdbc_lab" depends="clean, compile_jdbc_lab" >
     <jar destfile="lib/jdbc_lab.jar">
       <fileset dir="${build}/classes"
@@ -130,14 +130,14 @@
       <fileset dir="${build}/classes" excludes="${build}/classes/java112/tests/**" />
     </jar>
   </target>
-  
+
   <target name="build_demos" depends="clean, compile_demos">
       <jar destfile="lib/java112Demos.jar">
           <fileset dir="${build}/classes"
           excludes="${build}/classes/java112/tests/**" />
       </jar>
   </target>
-  
+
   <target name="compile_web" depends="clean, init">
     <javac srcdir="${src}"
       destdir="${web_classes}"
@@ -155,12 +155,12 @@
     <copy todir="${web_classes}">
       <fileset dir="${config}"/>
     </copy>
-   
+
     <!-- copy the js to the build/js dir-->
-<!-- if your js is not showing up, uncomment this...
+
     <copy todir="${build}/js">
       <fileset dir="${static}/js"/>
-    </copy>-->
+    </copy>
 
     <!-- copy the images to the build/images dir-->
     <copy todir="${build}/images">
@@ -200,7 +200,7 @@
   <target name="deploy" depends="dist">
     <copy file="${dist}/java112.war" todir="${tomcat}/webapps"/>
   </target>
-  
+
  <!--########################################################################
     |   jdoc - Generates JavaDoc                                               |
     #########################################################################-->
@@ -217,12 +217,12 @@
 
     <delete file="${user_home}/Dropbox/Public/projects.tgz"/>
 
-    
+
     <tar destfile="${user_home}/Dropbox/Public/projects.tgz"
          compression="gzip"
       basedir="${project_home}"
     />
-        
+
 
   </target>
 
@@ -251,13 +251,13 @@
 
   <target name="compile_tests" depends="clean, init">
     <!-- Compile the java code from ${src} into ${build} -->
-    <javac srcdir="${src}" 
-    destdir="${build}/classes" 
-    extdirs="${lib}" 
-    verbose="false" 
-    excludes="*.jsp,*.html,*.xml java112/analyzer/**, java112/labs1/**, java112/project2/**, java112/labs2" 
-    deprecation="on" 
-    debug="on" 
+    <javac srcdir="${src}"
+    destdir="${build}/classes"
+    extdirs="${lib}"
+    verbose="false"
+    excludes="*.jsp,*.html,*.xml java112/analyzer/**, java112/labs1/**, java112/project2/**, java112/labs2"
+    deprecation="on"
+    debug="on"
     includeAntRuntime="false" />
   </target>
 
